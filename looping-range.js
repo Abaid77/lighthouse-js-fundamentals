@@ -1,0 +1,16 @@
+let range = function(start, end, step) {
+  if(start === undefined || end === undefined || step === undefined || start > end || step <= 0) {
+    return [];
+  } else {
+    let total = [];
+    for(let i = start; i <= end; i += step) {
+      total.push(i);
+      }
+    return total;
+  }
+}
+
+
+console.log(range(0, 8, 2));
+console.log(range(10, 30, 5));
+console.log(range(-5, 2, 3));
